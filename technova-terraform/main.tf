@@ -7,9 +7,24 @@ terraform {
   }
 }
 
-#provider "aws" {
-#  region = var.aws_region
-#}
+provider "aws" {
+  region = var.aws_region
+}
+
+variable "AWS_ACCESS_KEY_ID" {
+  type        = string
+  description = "Your AWS Access Key ID"
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  type        = string
+  description = "Your AWS Secret access key"
+}
+
+variable "AWS_SESSION_TOKEN" {
+  type        = string
+  description = "Your AWS Session token"
+}
 
 # VPC Module
 module "vpc" {
