@@ -7,10 +7,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = var.aws_region
-}
-
 variable "AWS_ACCESS_KEY_ID" {
   type        = string
   description = "Your AWS Access Key ID"
