@@ -7,9 +7,9 @@ terraform {
   }
 }
 
-provider "aws" {
-  region                   = var.aws_region
-}
+#provider "aws" {
+#  region = var.aws_region
+#}
 
 # VPC Module
 module "vpc" {
